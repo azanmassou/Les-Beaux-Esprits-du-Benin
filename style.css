@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair&display=swap");
+
+/* 
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair', serif; */
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact */
+
+.contact-president {
+  background-color: #1f2039;
+  display: flex;
+  padding: 80px 170px 80px 170px;
+}
+
+.un {
+  background-color: #1f2039;
+  display: flex;
+  padding: 80px 170px 80px 170px;
+}
+
+.un h1 {
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.un p {
+  color: white;
+  margin-bottom: 20px;
+  width: 500px;
+}
+.un span {
+  color: #a5b4fc;
+  font-style: normal;
+}
+.un a {
+  display: inline-block;
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* Footer */
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.listfooter {
+  display: flex;
+}
