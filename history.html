@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histoires | Les Beaux Esprits du Bénin</title>
+
+    <!-- Styles Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inclure Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Icône du drapeau du Bénin -->
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/2560px-Flag_of_Benin.svg.png"
+    /> -->
+
+    <link rel="shortcut icon" href="assets/icon.jpeg" type="image/x-icon" />
+
+    <!-- Styles personnalisés -->
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background: linear-gradient(135deg, #2980b9, #2c3e50);
+      }
+      .navbar-brand {
+        color: #fff;
+      }
+      .navbar-nav .nav-link {
+        color: #fff;
+      }
+      .jumbotron {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: #fff;
+        padding: 80px 0;
+      }
+      .section {
+        padding: 60px 0;
+      }
+      .section-title {
+        color: #2980b9;
+        margin-bottom: 40px;
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+      .card-title {
+        color: #333;
+      }
+      footer {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: #fff;
+        padding: 20px 0;
+      }
+      footer a {
+        color: #fff;
+      }
+      footer a:hover {
+        color: #ccc;
+      }
+      footer .social-icons a {
+        color: #fff;
+        font-size: 20px;
+        margin: 0 10px;
+      }
+
+      /* Section responsive */
+      .section-responsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+      }
+      .section-responsive .image-wrapper {
+        flex: 1;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .section-responsive .image-wrapper img {
+        max-width: 100%;
+        height: auto;
+      }
+      .section-responsive .content {
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+      }
+      .section-responsive .content h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #007bff;
+      }
+      .section-responsive .content p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .section-responsive .content .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+      .section-responsive .content .btn-primary:hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+
+      /* Fullsreen */
+
+      .fullscreen-image {
+        /* position: relative; */
+        width: 100vh;
+        background-image: url("assets/icon.jpeg");
+        /* background-size: cover; */
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #070707;
+        text-align: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      /* Responsive */
+      @media (min-width: 768px) {
+        .section {
+          padding: 100px 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .fullscreen-image {
+          height: 50vh;
+        }
+      }
+    </style>
+
+    <script></script>
+  </head>
+  <body>
+    <header>
+      <!-- Barre de navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark" style="height: 75px">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="text-warning"> Les Beaux Esprits du Bénin</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">Histoires</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Prestations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"
+                    >Accoutrements Traditionnels</a
+                  >
+                  <a class="dropdown-item" href="#">Dance Traditionnels</a>
+                  <a class="dropdown-item" href="#">Percussion Traditionnels</a>
+                  <a class="dropdown-item" href="#">Rythms Beninois </a>
+                  <a class="dropdown-item" href="#">Treatre du Benin</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contact.html"
+                    >Autres Services</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="users.html">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main role="main">
+      <!-- Section principale -->
+      <section
+        class="jumbotron text-center mt-4 mx-4"
+        style="border-radius: 30px"
+      >
+        <div class="container">
+          <h1 class="jumbotron-heading">
+            Bienvenue dans l'univers des Beaux Esprits du Bénin
+          </h1>
+          <p class="lead">Découvrez notre musique et nos spectacles.</p>
+          <p>
+            <a href="#events" class="btn btn-primary my-2 mx-2"
+              >Voir les événements</a
+            >
+            <a href="contact.html" class="btn btn-secondary my-2 mx-2"
+              >Nous contacter</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="alert alert-success m-4 text-center expand-md"
+          style="justify-content: center"
+          role="alert"
+        >
+          <h1 class="text-center expand-md text-info">
+            Les Beaux Esprits du Bénin : Ambassadeurs de la Culture et de la
+            Tradition
+          </h1>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              Introduction au Mouvements des Beauxesprits du Bénin
+            </h5>
+            <p class="card-text">
+              Les Beaux Esprits du Bénin, une troupe artistique établie vers
+              1990, incarne l'essence même de la culture et de la musique
+              béninoises. Leur histoire est celle d'une passion débordante pour
+              la danse moderne et d'une quête incessante pour célébrer et
+              préserver les traditions musicales du pays.
+            </p>
+            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Origines et Histoire</h5>
+            <p class="card-text">
+              Fondée par des jeunes visionnaires, la troupe est née de la
+              volonté de revitaliser la danse moderne du Bénin. Leur parcours
+              est marqué par un profond engagement envers les racines
+              culturelles du pays, transformant ces traditions en performances
+              artistiques dynamiques. Au fil des ans, ils ont parcouru les
+              scènes locales et internationales, recevant des éloges pour leur
+              fusion unique de danse traditionnelle et de mouvements
+              contemporains.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Style Musical et Influence</h5>
+            <p class="card-text">
+              Les Beaux Esprits présentent un style musical fusionnant
+              habilement les rythmes traditionnels béninois avec des touches
+              contemporaines. Cette fusion crée un son unique, imprégné des
+              traditions du vodoun, du funk et de l'afrobeat, offrant une
+              expérience musicale immersive. Leurs performances sont rythmées
+              par des percussions envoûtantes, des mélodies envoûtantes et des
+              voix harmonieuses qui captivent leur public à chaque
+              représentation.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted"></small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mission Artistique</h5>
+            <p class="card-text">
+              En tant que gardiens de la culture vivante du Bénin, leur mission
+              est de partager la richesse culturelle du pays avec le monde. Ils
+              aspirent à inspirer les générations futures à célébrer et à
+              perpétuer ces traditions tout en les présentant de manière
+              innovante. Leur art va au-delà de la simple performance, il est un
+              moyen de préserver et de transmettre l'histoire et les valeurs de
+              la nation béninoise à travers les générations.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Performances et Spectacles</h5>
+            <p class="card-text">
+              Les performances des Beaux Esprits sont des expériences
+              captivantes, mêlant danses envoûtantes, rythmes entraînants et
+              mélodies envoûtantes. Chaque spectacle est une célébration de la
+              vie, de la joie et de la diversité culturelle du Bénin. Leurs
+              chorégraphies dynamiques et énergiques racontent des histoires,
+              expriment des émotions et invitent le public à se joindre à leur
+              célébration de la musique et de la danse.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Albums et Singles</h5>
+            <p class="card-text">
+              Dans leur discographie, on retrouve des albums et singles
+              emblématiques tels que "Rythmes d'Afrique", "Danse avec les
+              Esprits" et "Échos du Vodoun". Ces productions reflètent leur
+              évolution artistique et leur capacité à mêler tradition et
+              modernité. Chaque album est une exploration musicale qui traverse
+              les frontières, combinant des influences variées pour créer un son
+              béninois distinctif et passionnant.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Reconnaissance Internationale</h5>
+            <p class="card-text">
+              Le talent des Beaux Esprits les a conduits à se produire dans des
+              festivals et événements culturels internationaux renommés. Leur
+              présence sur la scène mondiale les a élevés au rang d'ambassadeurs
+              culturels du Bénin, partageant leur art et leur culture avec le
+              monde entier. Ils ont reçu des acclamations pour leurs
+              performances dynamiques et leur capacité à unir les gens à travers
+              la musique, faisant d'eux une force incontournable sur la scène
+              musicale mondiale.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Impact Social et Culturel</h5>
+            <p class="card-text">
+              Au-delà de leur contribution artistique, Les Beaux Esprits ont un
+              impact profond sur la société béninoise. Ils sont des modèles pour
+              les jeunes artistes, inspirant fierté culturelle et créativité.
+              Leur art renforce le tissu social en célébrant l'identité
+              culturelle du pays. Leurs ateliers et programmes éducatifs offrent
+              aux jeunes la possibilité d'apprendre et de s'épanouir dans le
+              monde de la danse et de la musique, créant ainsi un héritage
+              culturel solide pour les générations futures.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Actualités et Événements</h5>
+            <p class="card-text">
+              Les Beaux Esprits continuent d'être au cœur de l'actualité
+              culturelle. Récemment, ils ont lancé leur tournée mondiale
+              "Esprits du Monde" qui a rencontré un succès retentissant,
+              attirant des fans du monde entier. Leur présence sur les réseaux
+              sociaux et dans les médias garantit que leur musique et leur
+              message atteignent un large public, inspirant et unifiant les gens
+              à travers le monde.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Galerie de Photos et Vidéos</h5>
+            <p class="card-text">
+              Dans leur galerie en ligne, on peut admirer des photos capturant
+              l'énergie de leurs performances, ainsi que des vidéos de leurs
+              spectacles les plus mémorables. Cela offre un aperçu unique de
+              leur art et de leur présence scénique. Les photos montrent
+              l'émotion et la passion qu'ils mettent dans chaque mouvement,
+              tandis que les vidéos permettent de revivre les moments forts de
+              leurs spectacles inoubliables.<a href="gallery.html">Plus de details</a>
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Bureau & Membre</h5>
+            <p class="card-text">
+              Le bureau des Beaux Esprits du Bénin incarne la passion et la
+              dévotion pour la préservation et la célébration de la culture
+              musicale béninoise. Composé de membres fondateurs visionnaires,
+              tels que [Noms des membres], et soutenu par une équipe talentueuse
+              de musiciens, danseurs et artistes passionnés, les Beaux Esprits
+              sont guidés par une volonté commune de partager la richesse de la
+              musique et des traditions du Bénin avec le monde. Chaque membre
+              apporte son expertise et son dévouement à la scène artistique,
+              créant ainsi des spectacles vibrants et mémorables qui capturent
+              l'essence même de la culture béninoise. <a href="users.html">Plus de details</a>
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Atouts || Limites</h5>
+            <p class="card-text">
+              Les Beaux Esprits du Bénin se distinguent par leurs atouts uniques
+              qui les placent au cœur de la scène culturelle. Leur capacité à
+              fusionner les rythmes traditionnels avec des éléments
+              contemporains crée un son captivant et distinctif, attirant un
+              large public. Cependant, comme toute troupe artistique, ils sont
+              confrontés à des défis tels que la logistique des tournées et la
+              gestion des ressources. Pour surmonter ces défis, les Beaux
+              Esprits adoptent une approche collaborative, travaillant en
+              étroite collaboration avec des partenaires locaux et
+              internationaux pour améliorer leur visibilité et leur impact. De
+              plus, en investissant dans le développement de jeunes talents
+              locaux, ils assurent la pérennité de la culture musicale béninoise
+              pour les générations futures.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body  text-center">
+            <h5 class="card-title">Contact et Suivi</h5>
+            <p class="card-text">
+              Pour rester connecté avec Les Beaux Esprits du Bénin, il est
+              possible de les suivre sur leurs réseaux sociaux, tels que
+              Facebook, Instagram et YouTube. De plus, leur site web propose un
+              formulaire de contact pour les questions et les demandes
+              d'information. Ils sont toujours ouverts aux retours de leurs fans
+              et aux opportunités de collaboration, montrant ainsi leur
+              engagement envers leur public et leur désir de partager leur
+              musique avec le monde.
+              <a href="contact.html">Plus de details</a>
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Conclusion</h5>
+            <p class="card-text">
+              En conclusion, Les Beaux Esprits du Bénin sont bien plus qu'une
+              troupe artistique ; ils sont les porteurs de l'âme et de la
+              passion du Bénin. Leur musique transcende les frontières, unifiant
+              les peuples à travers des rythmes et des mouvements qui célèbrent
+              l'héritage riche et diversifié du pays. À travers leur art, Les
+              Beaux Esprits nous rappellent la puissance de la musique pour
+              créer des liens et inspirer un sentiment d'unité. Leur
+              contribution à la scène artistique internationale laisse un
+              héritage indélébile, marquant l'histoire de la musique béninoise
+              et captivant les cœurs à travers le monde.
+            </p>
+            <p class="card-text">
+              <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>
+            <a href="index.html" class="text-warning"
+              >Les Beaux Esprits du Bénin</a
+            >
+          </h5>
+          <p class="text-muted">
+            Une troupe artistique emblématique du Bénin, partageant la culture
+            à travers la danse et la musique.
+          </p>
+        </div>
+        <div class="col-md-6 text-muted py-3">
+          <div class="container text-center">
+            <p class="mb-0">
+              &copy; 2024 Les Beaux Esprits du Bénin - Tous droits réservés
+            </p>
+            <div class="social-icons mt-2">
+              <a href="https://facebook.com" target="_blank" class="text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank" class="text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank" class="text-white"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Scripts JavaScript pour Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script JavaScript personnalisé -->
+    <script>
+      // Activer le scrolling fluide pour les liens de la barre de navigation
+      $('a[href*="#"]').on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top,
+          },
+          500,
+          "linear"
+        );
+      });
+    </script>
+  </body>
+</html>
