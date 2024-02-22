@@ -213,16 +213,16 @@
                   Prestations
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="prestates.html"
+                  <a class="dropdown-item" href="prestates.html#accoutrements"
                     >Accoutrements Traditionnels</a
                   >
-                  <a class="dropdown-item" href="prestates.html#accoutrements">Dance Traditionnels</a>
-                  <a class="dropdown-item" href="prestates.html#accoutrements">Percussion Traditionnels</a>
-                  <a class="dropdown-item" href="prestates.html#accoutrements">Rythms Beninois </a>
-                  <a class="dropdown-item" href="prestates.html#accoutrements">Treatre du Benin</a>
+                  <a class="dropdown-item" href="prestates.html#dance">Dance Traditionnels</a>
+                  <a class="dropdown-item" href="prestates.html#percussion">Percussion Traditionnels</a>
+                  <a class="dropdown-item" href="prestates.html#rythms">Rythms Beninois </a>
+                  <a class="dropdown-item" href="prestates.html#theatre">Treatre du Benin</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="contact.html"
-                    >Autres Services</a
+                  <a class="dropdown-item" href="prestates.html#autres"
+                    >Autres Prestations</a
                   >
                 </div>
               </li>
@@ -488,8 +488,8 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card" style="background-color: #fff;border-radius: 15px;padding: 20px;box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)">
-                <h3 class="card-title text-center">Remerciements</h3>
-                <p class="card-text">
+                <h3 class="card-title text-center text-primary" style="font-size: larger;font-style: italic;font-weight: bolder;">Remerciements</h3>
+                <p class="card-text text-center">
                   Nous tenons à exprimer notre profonde gratitude envers toutes les personnes qui ont contribué à notre succès et qui continuent à soutenir notre passion pour la culture béninoise. À nos chers visiteurs, vous êtes les piliers de notre communauté artistique. Votre présence et votre soutien lors de nos événements ont été la source de notre inspiration et de notre énergie. Aux précieux collaborateurs, vous avez apporté votre expertise et votre dévouement à chaque étape de nos projets. Votre travail acharné a été le moteur de notre créativité. À nos généreux sponsors, votre soutien financier et votre confiance en notre vision ont permis la réalisation de nos rêves artistiques. Votre partenariat est une véritable bénédiction. À l'équipe exceptionnelle, vous êtes notre force et notre famille. Votre passion, votre détermination et votre talent sont les fondations sur lesquelles nous construisons chaque spectacle, chaque projet. Aux membres de notre communauté, votre engagement et votre enthousiasme sont la lumière qui guide notre chemin. Ensemble, nous formons un réseau de créativité et d'échange culturel inestimable. Au bureau, votre soutien administratif et logistique est le cœur battant de nos activités. Votre organisation sans faille et votre dévouement nous permettent de nous concentrer sur notre art. Enfin, un grand merci à chaque personne qui croit en notre mission et qui partage notre amour pour la richesse culturelle du Bénin. Votre soutien indéfectible est notre plus grande récompense. Ensemble, nous continuons à écrire l'histoire de notre troupe, Les Beaux Esprits du Bénin. Que notre aventure artistique soit une ode à la diversité, à la créativité et à l'unité. Merci du fond du cœur.
                 </p>
               </div>
@@ -549,15 +549,18 @@
     <!-- Script JavaScript personnalisé -->
     <script>
       // Activer le scrolling fluide pour les liens de la barre de navigation
-      $('a[href*="#"]').on("click", function (e) {
-        e.preventDefault();
-        $("html, body").animate(
-          {
-            scrollTop: $($(this).attr("href")).offset().top,
-          },
-          500,
-          "linear"
-        );
+      $('a[href*="#"]:not([href="#"])').on("click", function (e) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            e.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500, "linear");
+            return false;
+          }
+        }
       });
     </script>
   </body>
