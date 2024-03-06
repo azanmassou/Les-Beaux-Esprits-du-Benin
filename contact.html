@@ -1,405 +1,368 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Les Beaux Esprits du Bénin</title>
 
-    <!-- Styles Bootstrap -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Inclure Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+  <title>Beaux Esprits - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Icône du drapeau du Bénin -->
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/2560px-Flag_of_Benin.svg.png"
-    /> -->
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <link rel="shortcut icon" href="assets/icon.jpeg" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Styles personnalisés -->
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #cfd9df, #e2ebf0);
-        color: #333;
-        margin: 0;
-        padding: 0;
-      }
-      .navbar {
-        background: linear-gradient(135deg, #2980b9, #2c3e50);
-      }
-      .navbar-brand {
-        color: #fff;
-      }
-      .navbar-nav .nav-link {
-        color: #fff;
-      }
-      .jumbotron {
-        background: linear-gradient(135deg, #2c3e50, #34495e);
-        color: #fff;
-        padding: 80px 0;
-      }
-      .section {
-        padding: 60px 0;
-      }
-      .section-title {
-        color: #2980b9;
-        margin-bottom: 40px;
-      }
-      .card {
-        margin-bottom: 20px;
-      }
-      .card-title {
-        color: #333;
-      }
-      footer {
-        background: linear-gradient(135deg, #2c3e50, #34495e);
-        color: #fff;
-        padding: 20px 0;
-      }
-      footer a {
-        color: #fff;
-      }
-      footer a:hover {
-        color: #ccc;
-      }
-      footer .social-icons a {
-        color: #fff;
-        font-size: 20px;
-        margin: 0 10px;
-      }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-      /* Styles pour la section Contact */
-      .contact-section {
-        background-color: #f9f9f9;
-        padding: 80px 0;
-      }
 
-      .contact-section h2 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 40px;
-      }
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
-      .contact-info {
-        margin-bottom: 40px;
-      }
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-      .contact-info ul {
-        padding-left: 0;
-        list-style: none;
-      }
+  <!-- Fancybox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-      .contact-info li {
-        margin-bottom: 15px;
-      }
 
-      .contact-info i {
-        margin-right: 10px;
-        color: #2980b9;
-      }
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-      .contact-form {
-        background-color: #fff;
-        padding: 30px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      }
+  <!-- =======================================================
+  * Template Name: Lumia
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-      .form-group {
-        margin-bottom: 20px;
-      }
+<body>
 
-      .form-group label {
-        font-weight: 600;
-        color: #333;
-      }
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
+      <div class="logo me-auto">
+        <h1><a href="index.html" class="text-warning">Benin</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
-      .form-group textarea {
-        resize: vertical;
-        min-height: 150px;
-      }
-
-      .btn-send {
-        background-color: #2980b9;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .btn-send:hover {
-        background-color: #34495e;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <!-- Barre de navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark" style="height: 75px">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <span class="text-warning"> Les Beaux Esprits du Bénin</span>
-          </a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Acceuil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="history.html">Histoires</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Prestations
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="prestates.html#accoutrements"
-                    >Accoutrements Traditionnels</a
-                  >
-                  <a class="dropdown-item" href="prestates.html#dance">Dance Traditionnels</a>
-                  <a class="dropdown-item" href="prestates.html#percussion">Percussion Traditionnels</a>
-                  <a class="dropdown-item" href="prestates.html#rythms">Rythms Beninois </a>
-                  <a class="dropdown-item" href="prestates.html#theatre">Treatre du Benin</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="prestates.html#autres"
-                    >Autres Prestations</a
-                  >
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Galerie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="users.html">Equipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Contenu principal -->
-    <main role="main">
-      <!-- Section Contact -->
-      <section class="contact-section">
-        <div class="container">
-          <h2
-            class="text-center mb-5"
-            style="text-decoration: underline; font-size: 50px"
-          >
-            Contactez Nous
-          </h2>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="contact-info" style="margin-top: 60px">
-                <p class="text-muted py-4">
-                  Pour toute demande ou réservation, n'hésitez pas à nous
-                  contacter :
-                </p>
-                <ul class="list-unstyled">
-                  <li class="py-4">
-                    <i class="fas fa-phone"></i
-                    ><span
-                      style="
-                        font-weight: bold;
-                        font-style: italic;
-                        font-size: larger;
-                      "
-                      >TELEPHONE: </span
-                    ><span
-                      style="text-decoration: underline; font-size: smaller"
-                    >
-                      +229 1234 5678</span
-                    >
-                  </li>
-                  <li class="py-4">
-                    <i class="fas fa-envelope"></i
-                    ><span
-                      style="
-                        font-weight: bold;
-                        font-style: italic;
-                        font-size: larger;
-                      "
-                      >EMAIL:
-                    </span>
-                    <span style="text-decoration: underline; font-size: smaller"
-                      >info@beauxespritsbenin.com</span
-                    >
-                  </li>
-                  <li class="py-4">
-                    <i class="fas fa-map-marker-alt"></i
-                    ><span
-                      style="
-                        font-weight: bold;
-                        font-style: italic;
-                        font-size: larger;
-                      "
-                      >ADRESSE: </span
-                    ><span
-                      style="text-decoration: underline; font-size: smaller"
-                      >123 Rue des Artistes, Cotonou, Bénin
-                    </span>
-                  </li>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Acceuil</a></li>
+          <li><a class="nav-link scrollto" href="story.html">Histoires</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li> -->
+          <li class="dropdown"><a href="#"><span>Prestations</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <!-- <li class="dropdown"><a href="#"><span>Dance Traditionnels</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- Formulaire de contact -->
-              <div class="contact-form">
-                <h3 class="text-center mb-4">Envoyez-nous un message</h3>
-                <form>
-                  <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Votre Nom"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Votre Email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      rows="5"
-                      placeholder="Votre Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-send btn-block">
-                    Envoyer
-                  </button>
-                </form>
-              </div>
-            </div>
+              </li> -->
+              <li><a href="index.html#accoutrements">Accoutrements Traditionnels</a></li>
+              <li><a href="index.html#dance">Dance Traditionnels</a></li>
+              <li><a href="index.html#percussion">Percussion Traditionnels</a></li>
+              <li><a href="index.html#rythms">Rythms Beninois</a></li>
+              <li><a href="index.html#theatre">Treatre du Benin</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#gallerie">Galleries</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Bureau</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+        <a href="https://twitter.com" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://facebook.com" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1><span class="h-100">Beaux Esprits du Benin</span></h1>
+      <h2 class="mt-5 justify-content-center">Une troupe artistique emblématique du Bénin, partageant la
+        culture à travers la danse et la musique Traditionnelle.</h2>
+      <a href="index.html#section-actualites" class="btn-get-started scrollto my-1">Actualites</a>
+      <a href="index.html#section-evenements" class="btn-get-started scrollto my-1">Evenements</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- Carousel section -->
+  <!-- <section class="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+          <div class="carousel-caption">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+          <div class="carousel-caption">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+          <div class="carousel-caption">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section> -->
 
-    <!-- Pied de page -->
-    <footer class="bg-dark text-white">
-      <div class="container py-5">
+   <!-- Contenu principal -->
+   <main role="main">
+    <!-- Section Contact -->
+    <section class="contact-section">
+      <div class="container">
+        <h2
+          class="text-center mb-5"
+          style="text-decoration: underline; font-size: 50px"
+        >
+          Contactez Nous
+        </h2>
+
         <div class="row">
           <div class="col-md-6">
-            <h5>
-              <a href="index.html" class="text-warning"
-                >Les Beaux Esprits du Bénin</a
-              >
-            </h5>
-            <p class="text-muted">
-              Une troupe artistique emblématique du Bénin, partageant la culture
-              à travers la danse et la musique.
-            </p>
-          </div>
-          <div class="col-md-6 text-muted py-3">
-            <div class="container text-center">
-              <p class="mb-0">
-                &copy; 2024 Les Beaux Esprits du Bénin - Tous droits réservés
+            <div class="contact-info" style="margin-top: 60px">
+              <p class="text-muted py-4">
+                Pour toute demande ou réservation, n'hésitez pas à nous
+                contacter :
               </p>
-              <div class="social-icons mt-2">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  class="text-white"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="https://twitter.com" target="_blank" class="text-white"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  class="text-white"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="https://youtube.com" target="_blank" class="text-white"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </div>
+              <ul class="list-unstyled">
+                <li class="py-4">
+                  <i class="fas fa-phone"></i
+                  ><span
+                    style="
+                      font-weight: bold;
+                      font-style: italic;
+                      font-size: larger;
+                    "
+                    >TELEPHONE: </span
+                  ><span
+                    style="text-decoration: underline; font-size: smaller"
+                  >
+                    +229 1234 5678</span
+                  >
+                </li>
+                <li class="py-4">
+                  <i class="fas fa-envelope"></i
+                  ><span
+                    style="
+                      font-weight: bold;
+                      font-style: italic;
+                      font-size: larger;
+                    "
+                    >EMAIL:
+                  </span>
+                  <span style="text-decoration: underline; font-size: smaller"
+                    >info@beauxespritsbenin.com</span
+                  >
+                </li>
+                <li class="py-4">
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span
+                    style="
+                      font-weight: bold;
+                      font-style: italic;
+                      font-size: larger;
+                    "
+                    >ADRESSE: </span
+                  ><span
+                    style="text-decoration: underline; font-size: smaller"
+                    >123 Rue des Artistes, Cotonou, Bénin
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Formulaire de contact -->
+            <div class="contact-form">
+              <h3 class="text-center mb-4">Envoyez-nous un message</h3>
+              <form>
+                <div class="form-group">
+                  <label for="name">Nom</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Votre Nom"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Votre Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Votre Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-send btn-block">
+                  Envoyer
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <!-- Scripts JavaScript pour Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script JavaScript personnalisé -->
-    <script>
-      // Activer le scrolling fluide pour les liens de la barre de navigation
-      $('a[href*="#"]:not([href="#"])').on("click", function (e) {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            e.preventDefault();
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 500, "linear");
-            return false;
-          }
-        }
-      });
-    </script>
-  </body>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Beaux Esprits</h3>
+            <p>
+              123 Rue des Artistes <br>
+              Cotonou - Littoral<br>
+              Benin <br><br>
+              <strong>Phone:</strong> +229 1234 5678 <br>
+              <strong>Email:</strong> info@beauxespritsbenin.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Acceuil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="story.html">Histoire</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="team.html">Bureau</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="services.html"></a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="services.html">Web Development</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Ateliers Interactifs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Prestations Personnalisées</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Collaborations Artistiques</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Beaux Esprits</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+          Designed by <a href="/Personal/index.html" target="_blank">Azanmassou Happy</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://facebook.com" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://google-plus.com" class="google-plus" target="_blank"><i class="bx bxl-skype"></i></a>
+        <a href="https://linkedin.com" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
